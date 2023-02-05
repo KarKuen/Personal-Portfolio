@@ -83,18 +83,22 @@ a:hover {
 
 .sector {
     text-align: center;
-    padding-top: 15.5rem;
+    padding-top: 12.5rem;
     padding-bottom: 5.0rem;
 }
 
 .col-md-1 {
-    margin-top: 10%;
+    margin-top: 16%;
     font-size: 1.5rem;
 }
 
 #pic {
-    width: 22rem;
+    width: 30rem;
     border-radius: 3%;
+}
+
+#picword {
+    margin-top: 5%;
 }
 
 #greetings {
