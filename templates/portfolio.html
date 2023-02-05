@@ -1,0 +1,726 @@
+<!DOCTYPE  html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <link href="/static/styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <title>portfolio</title>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar-scroll" class="fixed-top navbar px-3">
+                <a class="navbar-brand" href="#helloworld">Kar Kuen</a>
+                <ul class="nav">
+                    <li><a class="navlink" href="#helloworld">Home</a></li>
+                    <li><a class="navlink" href="#about">About</a></li>
+                    <li><a class="navlink" href="#qualifications">Qualifications</a></li>
+                    <li><a class="navlink" href="#portfolio">Portfolio</a></li>
+                    <li><a class="navlink" href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <div id="helloworld" class="sector">
+                <div class="row">
+                    <div class="col-md-1">
+                        <a href="https://www.linkedin.com/in/lee-kar-kuen-0bba091a6/" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <p></p>
+                        <a href="https://github.com/KarKuen" target="_blank">
+                            <i class="bi bi-github" ></i>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <div id="greetings">
+                            <p>Hello World, </p>
+                            <p>I am Kar Kuen.</p>
+                        </div>
+                        <div id="greetingsseperator"></div>
+                        <p>Dipolma with Merit in Business Administration</p>
+                        <p>Director's Honor Roll Student</p>
+                        <p>CS50X and CS50P graduate</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img id="pic" src="static/images/pic.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div id="about" class="sector">
+                <h4>About Me</h4>
+                <h6>{ Let me introduce myself }</h6>
+                <div class="row">
+                    <div class="col">
+                        <img id="self" src="static/images/NDP.jpg">
+                    </div>
+                    <div class="col">
+                        <div id="aboutme">
+                            <p>I'm a Business Administration graduate from Singapore Polytechnic as well as a coding enthusiast !</p>
+                            <p>My ambition now, is to enrol into a double degree course of Business and Computer Science in university.</p>
+                            <p>I'm currently serving National Service and have completed CS50X and CS50P during my service to broaden my coding knowledge.</p>
+                        </div>
+                        <button id="CV" >
+                            <a id="download" href="static/CV/CV.pdf" download>DOWNLOAD CV &nbsp;</a>
+                            <i class="bi bi-download"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="qualifications" class="sector">
+                <h4>Qualifications</h4>
+                <h6>{ My Personal Journey }</h6>
+
+                <div id="timelineoptions">
+                    <button id="educationbutton" class="timelinebutton active">Education</button>
+                    <button id="experiencebutton" class="timelinebutton">Experience</button>
+                    <button id="certificatebutton" class="timelinebutton">Certificate</button>
+                </div>
+
+                <div id="education" class="collapsible active">
+                    <div class="timeline row g-0">
+                        <div class="left col">
+                            <a class="timelinetext" href="https://cs50.harvard.edu/python/2022/" target="_blank">CS50P</a>
+                            <div class="description">
+                                <p>Correctness, Design, Style</p>
+                                <p>Unit tests, Libraries</p>
+                                <p>Regular Expressions</p>
+                            </div>
+                            <p>2 Dec 2022 - 18 dec 2022</p>
+                        </div>
+                        <div class="right col"></div>
+                    </div>
+                    <div class="timeline row g-0">
+                        <div class="left col"></div>
+                        <div class="right col">
+                            <a class="timelinetext" href="https://cs50.harvard.edu/x/2022/" target="_blank">CS50X</a>
+                            <div class="description">
+                                <p>Computational Thinking, Abstraction</p>
+                                <p>Algorithms, Data Structures</p>
+                                <p>C, Python, SQL, HTML, CSS, JavaScript</p>
+                            </div>
+                            <p>10 Jul 2022 - 18 Nov 2022</p>
+                        </div>
+                    </div>
+                    <div class="timeline row g-0">
+                        <div class="left col">
+                            <a class="timelinetext" href="https://www.sp.edu.sg/sb/courses/full-time-diplomas/business-administration/overview" target="_blank">Business Administration</a>
+                            <div class="description">
+                                <p>Diploma with Merit, GPA: 3.969</p>
+                                <p>Director's Honor Roll</p>
+                            </div>
+                            <p>April 2018 - March 2021</p>
+                        </div>
+                        <div class="right col"></div>
+                    </div>
+                </div>
+
+                <div id="experience" class="collapsible">
+                    <div class="timeline row g-0">
+                        <div class="left col"></div>
+                        <div class="right col">
+                            <button type="button" class="timelinemodal" data-toggle="modal" data-target="#CS50Pmodal">CS50P</button>
+
+                            <div class="modal fade" id="CS50Pmodal" tabindex="-1" role="dialog" aria-labelledby="CS50P" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="CS50Ptitle">CS50P</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="cross" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>I did this course after CS50X.</p>
+                                            <p>I originally tried to do CS50 mobile. However, it's outdated and discontinued.</p>
+                                            <p>I learnt about <u>programming paradigms</u> and the <u>standards</u> to follow.</p>
+                                            <p>Lastly, I learnt the <u>object-oriented programming</u> method of writing code.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="description">
+                                <p>Harvard University</p>
+                            </div>
+
+                            <p>2 Dec 2022 - 18 Dec 2022</p>
+                        </div>
+                    </div>
+                    <div class="timeline row g-0">
+                        <div class="left col">
+
+                            <button type="button" class="timelinemodal" data-toggle="modal" data-target="#CS50Xmodal">CS50X</button>
+
+                            <div class="modal fade" id="CS50Xmodal" tabindex="-1" role="dialog" aria-labelledby="CS50X" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="CS50Xtitle">CS50X</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="cross" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>I completed this course while serving my <u>national service</u>.</p>
+                                            <p>This was my first experience with C, HTML, CSS, JavaScript, SQL as well as,
+                                                objects and classes.</p>
+                                            <p>I was taught how to <u>style</u>, <u>optimize</u> and, the <u>correctness</u> of my code.</p>
+                                            <p>Lastly, I learnt about <u>functional programming</u> and <u>procedural programming</u>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="description">
+                                <p>Harvard University</p>
+                            </div>
+
+                            <p>10 Jul 2022 - 18 Nov 2022</p>
+                        </div>
+                        <div class="right col"></div>
+                    </div>
+                    <div class="timeline row g-0">
+                        <div class="left col"></div>
+                        <div class="right col">
+
+                            <button type="button" class="timelinemodal" data-toggle="modal" data-target="#Exumamodal">Exuma</button>
+
+                            <div class="modal fade" id="Exumamodal" tabindex="-1" role="dialog" aria-labelledby="Exuma" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="Exumatitle">Exuma</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="cross" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>For my final semester in Singapore Polytechnic, within the
+                                                specialisation of <u>entrepreneurship</u>, I was tasked to create my <u>own startup</u> and run it.</p>
+                                            <p>My team started Exuma, selling disinfecting device during the height of the covid pandemic.</p>
+                                            <p>We participated in the annual <u>Rocket Pitch Festival</u> and won <u>first place</u> for our start up idea.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="description">
+                                <p>Personal Startup</p>
+                            </div>
+
+                            <p>2020 - 2021</p>
+                        </div>
+                    </div>
+                    <div class="timeline row g-0">
+                        <div class="left col">
+
+                            <button type="button" class="timelinemodal" data-toggle="modal" data-target="#ShopeeCodeLeaguemodal">Shopee Code League</button>
+
+                            <div class="modal fade" id="ShopeeCodeLeaguemodal" tabindex="-1" role="dialog" aria-labelledby="Exuma" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ShopeeCodeLeaguetitle">Shopee Code League</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="cross" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>My friends and I decided to <u>challenge</u> ourselves and took part in this competition together.</p>
+                                            <p>This was my first exposure to <u>competitive programming</u> and the overall correctness,
+                                                effectiveness and optimization of code.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="description">
+                                <p>Online Competition</p>
+                            </div>
+
+                            <p>2020 & 2021</p>
+                        </div>
+                        <div class="right col"></div>
+                    </div>
+                    <div class="timeline row g-0">
+                        <div class="left col"></div>
+                        <div class="right col">
+
+                            <button type="button" class="timelinemodal" data-toggle="modal" data-target="#FundamentalsofProgrammingmodal">Fundamentals of Programming</button>
+
+                            <div class="modal fade" id="FundamentalsofProgrammingmodal" tabindex="-1" role="dialog" aria-labelledby="Exuma" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="FundamentalsofProgrammingtitle">Fundamentals of Programming</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="cross" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>When it was time for me to choose an eletive, I was given the option of programming.</p>
+                                            <p>Up till this point, I barely knew basic python from
+                                                <a href="https://www.youtube.com/playlist?list=PLQVvvaa0QuDeAams7fkdcwOGBpGdHpXln" target="_blank">sentdex</a> and
+                                                <a href="https://inventwithpython.com/invent4thed/" target="_blank">pygames</a>.</p>
+                                            <p>Hence, I decided to strengthen my coding foundation.</p>
+                                            <p>Lastly, this was also my first experience coding an <u>entire project</u> with a <u>team</u>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="description">
+                                <p>Singapore Polytechnic Elective</p>
+                            </div>
+
+                            <p>2020 - 2021</p>
+                        </div>
+                    </div>
+                    <div class="timeline row g-0">
+                        <div class="left col">
+
+                            <button type="button" class="timelinemodal" data-toggle="modal" data-target="#EV3modal">EV3</button>
+
+                            <div class="modal fade" id="EV3modal" tabindex="-1" role="dialog" aria-labelledby="Exuma" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="EV3title">EV3</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="cross" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>My very first experience with coding. EV3 is used in my secondary school <u>robotics CCA</u>.</p>
+                                            <p>It uses a programming language similar to stratch.</p>
+                                            <p>We <u>annually won</u> the <u>NJRC</u> and I won the <u>most entertaining award</u>.</p>
+                                            <p>Lastly, we participated in <u>enterpreneurial events</u>, setting up our own booths.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="description">
+                                <p>Pei Hwa Secondary School CCA</p>
+                            </div>
+
+                            <p>2014 - 2017</p>
+                        </div>
+                        <div class="right col"></div>
+                    </div>
+                </div>
+
+                <div id="certificate" class="collapsible">
+                    <div class="timeline row g-0">
+                        <div class="left col">
+
+                            <button type="button" class="timelinemodal" data-toggle="modal" data-target="#CS50Pcert">CS50P</button>
+                            <div class="modal fade" id="CS50Pcert" tabindex="-1" role="dialog" aria-labelledby="CS50Pcert" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <img src="static/images/CS50P_Certificate.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="description">
+                                <p>Harvard University</p>
+                                <p>CS50 Certificate of Completion</p>
+                            </div>
+
+                            <p>18 Dec 2022</p>
+                        </div>
+                        <div class="right col"></div>
+                    </div>
+                    <div class="timeline row g-0">
+                        <div class="left col"></div>
+                        <div class="right col">
+
+                            <button type="button" class="timelinemodal" data-toggle="modal" data-target="#CS50Xcert">CS50X</button>
+                            <div class="modal fade" id="CS50Xcert" tabindex="-1" role="dialog" aria-labelledby="CS50Xcert" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <img src="static/images/CS50X_Certificate.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="description">
+                                <p>Harvard University</p>
+                                <p>CS50 Certificate of Completion</p>
+                            </div>
+
+                            <p>18 Nov 2022</p>
+                        </div>
+                    </div>
+                    <div class="timeline row g-0">
+                        <div class="left col">
+
+                            <button type="button" class="timelinemodal" data-toggle="modal" data-target="#Diplomacert">Diploma with Merit</button>
+                            <div class="modal fade" id="Diplomacert" tabindex="-1" role="dialog" aria-labelledby="Diplomacert" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <img class="pictures" src="static/images/Merit.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="description">
+                                <p>Singapore Polytechnic</p>
+                                <p>Business Administration, Entrepreneurship</p>
+                                <p>GPA: 3.969</p>
+                            </div>
+
+                            <p>19 March 2021</p>
+                        </div>
+                        <div class="right col"></div>
+                    </div>
+                    <div class="timeline row g-0">
+                        <div class="left col"></div>
+                        <div class="right col">
+
+                            <button type="button" class="timelinemodal" data-toggle="modal" data-target="#Directorcert">Director's Honor Roll</button>
+                            <div class="modal fade" id="Directorcert" tabindex="-1" role="dialog" aria-labelledby="Directorcert" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <img src="static/images/Honors.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="description">
+                                <p>Singapore Polytechnic</p>
+                                <p>3 year successive Director's Honor Roll Student</p>
+                                <p>Top 10% of my cohort</p>
+                            </div>
+
+                            <p>2018 - 2021</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="portfolio" class="sector">
+                <h4>Portfolio</h4>
+                <h6>{ My Recent Works }</h6>
+
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class="projects">
+                            <img class="screenshots" id="portfoliowebsite" src="static/images/portfoliowebsite.jpg">
+                            <p>Personal Portfolio Website</p>
+                            <p><a class="gitlink" href="https://github.com/KarKuen/Personal-Portfolio" target="_blank">source code</a></p>
+
+                            <!-- button trigget modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#portfoliomodal">Description</button>
+                            <!-- modal -->
+                            <div class="modal fade" id="portfoliomodal" tabindex="-1" role="dialog" aria-labelledby="portfolio" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="portfoliotitle">portfolio</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="cross" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>This is my Personal Portfolio Website.</p>
+                                            <p>On top of my self summary, it includes my :</p>
+                                            <ul>
+                                                <li>Education</li>
+                                                <li>Experience</li>
+                                                <li>Certificates</li>
+                                                <li>Recent works</li>
+                                            </ul>
+                                            <p>This is developed with a Flask framework and deployed on AWS Elastic Beanstalk.</p>
+                                            <p>This was written in Python, HTML, CSS, JavaScript with Server requests, API and automatic email service</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="projects">
+                            <img class="screenshots" id="telebot" src="static/images/telebot.jpg">
+                            <p>Forecast Alerts Telegram Bot</p>
+                            <p><a class="gitlink" href="https://github.com/KarKuen/Weather-Forecast-SG" target="_blank">source code</a></p>
+
+                            <!-- button trigget modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#telebotmodal">Description</button>
+                            <!-- modal -->
+                            <div class="modal fade" id="telebotmodal" tabindex="-1" role="dialog" aria-labelledby="telebot" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="telebottitle">telegram bot</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="cross" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>WeatherForecastBot is a telegram bot I made for army.</p>
+                                            <p>Safety is essential thus, we are unable to train in certain weather conditions :</p>
+                                            <ul>
+                                                <li>Heavy rain</li>
+                                                <li>Lightning risk</li>
+                                            </ul>
+                                            <p>This responsive telegram bot is deployed on Heroku.</p>
+                                            <p>This was written in Python, with API calls, Inline Keybaord, Inline Button, Job Queue, Command Handler, Callback Query Handler</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="projects">
+                            <img class="screenshots" id="notabless" src="static/images/notable_ss.jpg">
+                            <p>Notetaking Website</p>
+                            <p><a class="gitlink" href="https://github.com/KarKuen/final-project-notable-CS50-" target="_blank">source code</a></p>
+
+                            <!-- button trigget modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#notablemodal">Description</button>
+                            <!-- modal -->
+                            <div class="modal fade" id="notablemodal" tabindex="-1" role="dialog" aria-labelledby="notable" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="notabletitle">notable</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="cross" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>Notable is my CS50x Final Project and a Responsive Python Flask web application with MySQL as the database management system</p>
+                                            <p>It a note-taking web application where users can:</p>
+                                            <ul>
+                                                <li>Create notebooks</li>
+                                                <li>Take notes</li>
+                                                <li>Access checklist and notepads</li>
+                                            </ul>
+                                            <p>This was written in Python, HTML, CSS, JavaScript, JinJa, SQL.</p>
+                                            <p>With Ajax requests and Json data for automatic data saving, Sessions and Cookies for resigstering accounts and PHP state</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="projects">
+                            <img class="screenshots" id="homepagess" src="static/images/homepage_ss.jpg">
+                            <p>Slice of Life Website</p>
+                            <p><a class="gitlink" href="https://github.com/KarKuen/homepage-CS50-" target="_blank">source code</a></p>
+
+                            <!-- button trigget modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#homepagemodal">Description</button>
+                            <!-- modal -->
+                            <div class="modal fade" id="homepagemodal" tabindex="-1" role="dialog" aria-labelledby="homepage" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="homepagetitle">homepage</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="cross" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>For my CS50X Week 8's Problem Set,
+                                                I decided to create a personal website that shared a slice of my life.</p>
+                                            <p>This website was coded with HTML, CSS and JavaScript.</p>
+
+                                            <ul>
+                                                <li>I shared my education pathway and lessons learnt from each institution.</li>
+                                                <li>I expressed all my coding experiences.</li>
+                                                <li>I revealed some of my own personal highlights.</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="projects">
+                            <img class="screenshots" id="secretsantass" src="static/images/secretsanta_ss.jpg">
+                            <p>Secret Santa Shuffler</p>
+                            <p><a class="gitlink" href="https://github.com/KarKuen/Final-Project-Secret-Santa-CS50P-" target="_blank">source code</a></p>
+
+                            <!-- button trigget modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#secretsantamodal">Description</button>
+                            <!-- modal -->
+                            <div class="modal fade" id="secretsantamodal" tabindex="-1" role="dialog" aria-labelledby="secretsanta" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="secretsantatitle">secretsanta</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="cross" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>For my CS50P Final Project, I made Secret Santa. Secret Santa:</p>
+                                            <ul>
+                                                <li>Is a Linux Program</li>
+                                                <li>Randomizes each participants' secret santa</li>
+                                                <li>Allow users to buy gifts for one another</li>
+                                            </ul>
+
+                                            <p>With Python's SMTP, this easily send annonymous emails to each participant.
+                                                However, for my course's YouTube video, I decided against it and
+                                                created a mock secret santa.</p>
+
+                                            <p>However, this is the first program I made using Object Oriented Programming.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-6"></div>
+                </div>
+            </div>
+
+            <div id="contact" class="sector">
+                <h4>Contact me</h4>
+                <form id="contactinfo" action="https://formsubmit.io/send/3b0371fd-d903-467e-a54a-53c026c772cf" method="POST">
+                    <div class="mb-3">
+                        <input required size="30" autocomplete="off" class="form-control mx-auto w-auto" id="name" name="name" placeholder="Name" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <input required size="30" class="form-control mx-auto w-auto" id="email" name="email" placeholder="Email" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <textarea id="message" form="contactinfo" name="message" rows="4" cols="50" placeholder="Message" type="text"></textarea>
+                    </div>
+                    <button id="sendmessage" class="btn btn-primary" type="submit">Send Message</button>
+                </form>
+            </div>
+            <div id="bottomsection"></div>
+
+            <button type="button" id="btn-back-to-top">
+                <i class="bi bi-arrow-up"></i>
+            </button>
+
+        </main>
+        <footer>
+            <div class="row">
+                <div id="footername" class="col mid">Kar Kuen</div>
+                <div class="col mid center">
+                    <a class="navlink" href="#portfolio">Portfolio</a>
+                    <p></p>
+                    <a class="navlink" href="#contact">Contact me</a>
+                </div>
+                <div id="icon" class="col mid">
+                    <a href="https://www.linkedin.com/in/lee-kar-kuen-0bba091a6/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <span>&nbsp;</span>
+                    <a href="https://github.com/KarKuen" target="_blank">
+                        <i class="bi bi-github" ></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+        let education = document.getElementById('education');
+        document.getElementById('educationbutton').addEventListener('click', function () {
+            let list = document.querySelectorAll('.active');
+            for (let i = 0; i < list.length; i++) {
+                list[i].classList.toggle('active');
+            }
+            education.classList.toggle('active');
+            document.getElementById('educationbutton').classList.toggle('active');
+        })
+
+        let experience = document.getElementById('experience');
+        document.getElementById('experiencebutton').addEventListener('click', function () {
+            let list = document.querySelectorAll('.active');
+            for (let i = 0; i < list.length; i++) {
+                list[i].classList.toggle('active');
+            }
+            experience.classList.toggle('active');
+            document.getElementById('experiencebutton').classList.toggle('active');
+        })
+
+        let certificate = document.getElementById('certificate');
+        document.getElementById('certificatebutton').addEventListener('click', function () {
+            let list = document.querySelectorAll('.active');
+            for (let i = 0; i < list.length; i++) {
+                list[i].classList.toggle('active');
+            }
+            certificate.classList.toggle('active');
+            document.getElementById('certificatebutton').classList.toggle('active');
+        })
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> <!--not sure if needed or not-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+        scrollFunction();
+        };
+
+        function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+</html>
